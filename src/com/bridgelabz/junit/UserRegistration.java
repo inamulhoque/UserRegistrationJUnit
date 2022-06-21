@@ -1,9 +1,9 @@
 package com.bridgelabz.junit;
 
 public class UserRegistration {
-    public boolean validPassword(String password) {
+    public boolean validEmail(String mail) {
 
-        String nameRegex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=])(?=\\S+$).{7,}$";
-        return password.matches(nameRegex);
+        String nameRegex = "^[a-z\\d+_.-]+@[a-z\\d.-a-z]+$";
+        return mail.matches(nameRegex);
     }
 }
