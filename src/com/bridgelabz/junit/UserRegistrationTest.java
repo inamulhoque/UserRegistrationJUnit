@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 public class UserRegistrationTest {
     @Test
-    public void testLastName() {
+    public void testEmail() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isValid = userRegistration.validLastName("Hoque");
+        boolean isValid = userRegistration.validEmail("inam.xyz@bl.co.in");
         Assert.assertEquals(true, isValid);
     }
 }

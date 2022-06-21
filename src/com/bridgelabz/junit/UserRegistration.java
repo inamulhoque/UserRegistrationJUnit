@@ -1,9 +1,9 @@
 package com.bridgelabz.junit;
 
 public class UserRegistration {
-    public boolean validLastName(String name) {
+    public boolean validEmail(String mail) {
 
-        String nameRegex = "^[A-Z]{1}[a-z]{2,}$";
-        return name.matches(nameRegex);
+        String nameRegex = "^[a-z\\\\d+_.-]+@[a-z\\\\d.-]+$";
+        return mail.matches(nameRegex);
     }
 }
