@@ -1,9 +1,9 @@
 package com.bridgelabz.junit;
 
 public class UserRegistration {
-    public boolean validMobile(String mobile) {
+    public boolean validPassword(String password) {
 
-        String nameRegex = "\\+\\d\\d+\\s+[\\d]{10}$";
-        return mobile.matches(nameRegex);
+        String nameRegex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=])(?=\\S+$).{7,}$";
+        return password.matches(nameRegex);
     }
 }
