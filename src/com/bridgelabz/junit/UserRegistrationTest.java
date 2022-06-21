@@ -7,7 +7,7 @@ public class UserRegistrationTest {
     @Test
     public void testEmail() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isValid = userRegistration.validEmail("inam.xyz@bl.co.in");
+        boolean isValid = userRegistration.validMobile("+91 9101149275");
         Assert.assertEquals(true, isValid);
     }
 }
